@@ -1,0 +1,72 @@
+!# xrdb ~/.Xresources
+URxvt.font:     xft:Hack Nerd Font:size=11:antialias=true
+URxvt.boldFont: xft:Hack Nerd Font:bold:size=11:antialias=true
+
+!# intall xclip
+URxvt.perl-ext-common: default,clipboard
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+!! URxvt Appearance
+!URxvt.transparent: true
+urxvt*depth: 32
+urxvt*background: [80]#101419
+!urxvt*background: rgba:0000/0000/0200/c800
+
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 102x17
+URxvt.internalBorder: 17
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+!URxvt.depth: 5
+URxvt.iso14755: false
+
+!-- palette --!
+#define darker_bg   #0e1217
+#define bg          #101419
+#define contrast_bg #15191e
+#define lighter_bg  #1a1e23
+#define fg          #b6beca
+#define cursor      #b6beca
+
+#define black         #242931
+#define light_black   #485263
+#define red           #e05f65
+#define green         #78DBA9
+#define yellow        #f1cf8a
+#define orange        #e9a180
+#define darker_blue   #4e88d4
+#define contrast_blue #5f94da
+#define blue          #70a5eb
+#define aquamarine    #7ddac5
+#define magenta       #c68aee
+#define cyan          #74bee9
+#define white         #dee1e6
+
+!-- colors assignment --!
+*.foreground:   fg
+*.background:   bg
+*.cursorColor:  cursor
+
+*.color0: black
+*.color1: red
+*.color2: green
+*.color3: yellow
+*.color4: blue
+*.color5: magenta
+*.color6: cyan
+*.color7: white
+
+*.color8: light_black
+*.color9: red
+*.color10: green
+*.color11: yellow
+*.color12: blue
+*.color13: magenta
+*.color14: cyan
+*.color15: white
